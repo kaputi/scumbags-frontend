@@ -3,8 +3,8 @@ import Cart from './Cart'
 import FAQ from './FAQ'
 import Gallery from './Gallery'
 import Home from './Home'
-import Nav from './Nav'
+import PageNotFound from './PageNotFound'
 import Shop from './Shop'
 import ShopItem from './ShopItem'
 
-export { About, Cart, FAQ, Gallery, Home, Nav, Shop, ShopItem }
+export { About, Cart, FAQ, Gallery, Home, PageNotFound, Shop, ShopItem }

@@ -1,6 +1,6 @@
 import React from 'react'
-import './App.css'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { ThemeProvider } from 'styled-components'
 
 import {
   About,
@@ -8,26 +8,33 @@ import {
   FAQ,
   Gallery,
   Home,
-  Nav,
   Shop,
   ShopItem,
-} from './components'
+  PageNotFound,
+} from './components/pages'
+import MainWrapper from './components/MainWrapper'
+import TopNav from './components/TopNav'
+
+import { light } from './config/theme'
 
 function App() {
   return (
     <Router>
-      <div className="App">
-        <Nav />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/shop" exact component={Shop} />
-          <Route path="/shop/:id" component={ShopItem} />
-          <Route path="/gallery" component={Gallery} />
-          <Route path="/FAQ" component={FAQ} />
-          <Route path="/about" component={About} />
-          <Route path="/cart" component={Cart} />
-        </Switch>
-      </div>
+      <ThemeProvider theme={light}>
+        <MainWrapper>
+          <TopNav />
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/shop" exact component={Shop} />
+            <Route path="/shop/:id" component={ShopItem} />
+            <Route path="/gallery" component={Gallery} />
+            <Route path="/FAQ" component={FAQ} />
+            <Route path="/about" component={About} />
+            <Route path="/cart" component={Cart} />
+            <Route component={PageNotFound} />
+          </Switch>
+        </MainWrapper>
+      </ThemeProvider>
     </Router>
   )
 }
