@@ -12,7 +12,7 @@ const FooterWrapper = styled.div``
 const Footer = () => (
   <FooterWrapper>
     <FooterNav />
-    <CopyRight>© Scumbags messenger bags</CopyRight>
+    <CopyRight>© Scumbags Messenger Bags 2019</CopyRight>
   </FooterWrapper>
 )
 
