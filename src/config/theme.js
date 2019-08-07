@@ -2,6 +2,9 @@
 const logo = '/images/logo.png'
 const mainBackground = '/images/green-grayscale.jpg'
 
+//colors
+const lightGray = '#888'
+
 // configs
 const config = {
   images: {
@@ -19,9 +22,11 @@ const config = {
 export const light = {
   ...config,
   backgroundColor: 'white',
+  menuItemColor: lightGray,
 }
 
 export const dark = {
   ...config,
   backgroundColor: '#424242',
+  menuItemColor: lightGray,
 }
