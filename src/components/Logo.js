@@ -15,9 +15,9 @@ const Logo = styled.img.attrs({
         return size
     }
   },
-  src: (props) => props.theme.images.logo,
+  src: ({ theme }) => theme.images.logo,
 })`
-  width: ${(props) => props.logoSize};
+  width: ${({ logoSize }) => logoSize};
 `
 
 export default Logo
