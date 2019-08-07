@@ -14,6 +14,7 @@ import {
 } from './components/pages'
 import MainWrapper from './components/MainWrapper'
 import TopNav from './components/TopNav'
+import Footer from './components/Footer'
 
 import { light } from './config/theme'
 
@@ -33,6 +34,7 @@ function App() {
             <Route path="/cart" component={Cart} />
             <Route component={PageNotFound} />
           </Switch>
+          <Footer />
         </MainWrapper>
       </ThemeProvider>
     </Router>
