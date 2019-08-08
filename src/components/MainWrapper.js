@@ -9,6 +9,7 @@ const BackgroundWrapper = styled.div`
   background-image: url(${({ theme }) => theme.images.mainBackground});
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 `
 
 const SiteWrapper = styled.div`

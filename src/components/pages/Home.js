@@ -1,5 +1,13 @@
 import React from 'react'
 
-const Home = () => <h1>Home</h1>
+import Carousel from '../Carousel/Carousel'
+
+const Home = () => (
+  <Carousel width="95%">
+    <img alt="imagen1" src="/images/1.jpg" />
+    <img alt="imagen2" src="/images/2.jpg " />
+    <img alt="imagen3" src="/images/3.jpg" />
+  </Carousel>
+)
 
 export default Home
