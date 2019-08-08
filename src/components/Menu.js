@@ -13,7 +13,7 @@ const MenuWrapper = styled.ul`
 
 const Menu = ({ items }) => {
   const menuItemsNodes = items.map((item) => (
-    <MenuItem key={`menu-${items.text}`} to={item.route}>
+    <MenuItem key={`menu-${item.text}`} to={item.route}>
       <h3>{item.text}</h3>
     </MenuItem>
   ))
