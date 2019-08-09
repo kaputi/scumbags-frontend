@@ -4,10 +4,13 @@
   box-sizing: border-box;
 }
 
-body,
+body {
+  min-height: 100vh;
+}
+
 html,
 #root {
-  height: 100%;
+  height: 100vh;
 }
 
 body {

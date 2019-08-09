@@ -3,13 +3,14 @@ import T from 'prop-types'
 import styled from 'styled-components'
 
 const BackgroundWrapper = styled.div`
-  height: 100%;
+  min-height: 100%;
   display: flex;
   justify-content: center;
   background-image: url(${({ theme }) => theme.images.mainBackground});
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  overflow: scroll;
 `
 
 const SiteWrapper = styled.div`
@@ -18,6 +19,7 @@ const SiteWrapper = styled.div`
   margin: 0 auto;
   background-color: ${({ theme }) => theme.backgroundColor};
   text-align: center;
+  padding: 0px 50px;
 `
 
 const MainWrapper = ({ children }) => (
