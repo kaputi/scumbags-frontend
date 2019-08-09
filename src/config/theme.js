@@ -17,6 +17,7 @@ const config = {
     },
   },
   maxWidth: '1130px',
+  iconSize: '2x',
 }
 
 export const light = {
