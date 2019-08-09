@@ -17,6 +17,7 @@ import TopNav from './components/TopNav'
 import Footer from './components/Footer'
 
 import { light } from './config/theme'
+import './config/fontAwesome'
 
 function App() {
   return (
